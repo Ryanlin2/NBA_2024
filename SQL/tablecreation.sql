@@ -76,3 +76,35 @@ CREATE TABLE team_game_stats (
         FOREIGN KEY (team_id)
         REFERENCES team(team_id)
 );
+
+CREATE TABLE staging_team_game_stats_raw (
+    season_id VARCHAR,
+    team_id BIGINT,
+    team_abbreviation VARCHAR,
+    team_name VARCHAR,
+    game_id BIGINT,
+    game_date DATE,
+    matchup VARCHAR,
+    wl VARCHAR,
+    min INT,
+    pts INT,
+    fgm INT,
+    fga INT,
+    fg_pct FLOAT,
+    fg3m INT,
+    fg3a INT,
+    fg3_pct FLOAT,
+    ftm INT,
+    fta INT,
+    ft_pct FLOAT,
+    oreb INT,
+    dreb INT,
+    reb INT,
+    ast INT,
+    stl INT,
+    blk INT,
+    tov INT,
+    pf INT,
+    plus_minus FLOAT,
+    home_team BOOLEAN
+);
