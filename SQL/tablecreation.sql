@@ -108,3 +108,35 @@ CREATE TABLE staging_team_game_stats_raw (
     plus_minus FLOAT,
     home_team BOOLEAN
 );
+
+CREATE TABLE staging_team_game_stats_text (
+    season_id text,
+    team_id text,
+    team_abbreviation text,
+    team_name text,
+    game_id text,
+    game_date text,
+    matchup text,
+    wl text,
+    min text,
+    pts text,
+    fgm text,
+    fga text,
+    fg_pct text,
+    fg3m text,
+    fg3a text,
+    fg3_pct text,
+    ftm text,
+    fta text,
+    ft_pct text,
+    oreb text,
+    dreb text,
+    reb text,
+    ast text,
+    stl text,
+    blk text,
+    tov text,
+    pf text,
+    plus_minus text,
+    home_team text
+);
