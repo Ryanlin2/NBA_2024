@@ -1,4 +1,4 @@
+psycopg[binary]
 nba_api
 pandas
 pydantic
-sqlalchemy
